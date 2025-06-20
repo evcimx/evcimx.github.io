@@ -2,7 +2,8 @@
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f5f5;
+  background: #f5f5f5 url('images/logo.png') no-repeat center center fixed;
+  background-size: 300px;
   color: #111;
   text-align: center;
 }
@@ -20,6 +21,11 @@ h1 {
 
 .intro, .gallery, .contact {
   padding: 2em 1em;
+  background-color: rgba(255, 255, 255, 0.85); /* Slight white overlay for readability */
+  margin: 1em auto;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
 }
 
 .gallery img {
@@ -38,3 +44,4 @@ footer {
   color: #eee;
   padding: 1em;
 }
+
