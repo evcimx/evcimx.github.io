@@ -32,6 +32,14 @@ h1 {
   margin: 0;
 }
 
+/* Clickable section styling */
+.section-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .intro, .gallery, .contact {
   padding: 2em 1em;
   background-color: rgba(255, 255, 255, 0.85);
@@ -42,10 +50,10 @@ h1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect on all content blocks */
-.intro:hover,
-.gallery:hover,
-.contact:hover {
+/* Hover effect on sections */
+.section-link:hover .intro,
+.section-link:hover .gallery,
+.section-link:hover .contact {
   transform: scale(1.015);
   box-shadow: 0 0 16px rgba(0, 123, 255, 0.2);
 }
@@ -84,6 +92,7 @@ footer {
   color: #eee;
   padding: 1em;
 }
+
 
 
 
