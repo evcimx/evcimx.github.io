@@ -2,8 +2,11 @@
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: red url('images/logo.png') no-repeat center center fixed;
-  background-size: 300px;
+  background: #f5f5f5 url('images/logo.png') no-repeat center center fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   color: #111;
   text-align: center;
 }
