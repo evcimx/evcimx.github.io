@@ -17,7 +17,7 @@ body::before {
   height: 100%;
   background: url('images/logo.png') no-repeat center center;
   background-size: 40%;
-  opacity: 0.05; /* subtle fade */
+  opacity: 0.05;
   z-index: -1;
 }
 
@@ -32,15 +32,22 @@ h1 {
   margin: 0;
 }
 
-.intro,
-.gallery,
-.contact {
+.intro, .gallery, .contact {
   padding: 2em 1em;
-  background-color: rgba(255, 255, 255, 0.85); /* Slight white overlay */
+  background-color: rgba(255, 255, 255, 0.85);
   margin: 1em auto;
   border-radius: 12px;
   width: 90%;
   max-width: 800px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on all content blocks */
+.intro:hover,
+.gallery:hover,
+.contact:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0 16px rgba(0, 123, 255, 0.2);
 }
 
 /* Product gallery layout */
@@ -49,7 +56,6 @@ h1 {
   justify-content: center;
   gap: 2em;
   flex-wrap: wrap;
-  padding: 2em 1em;
 }
 
 .gallery img {
@@ -60,7 +66,7 @@ h1 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect on product images */
+/* Hover effect on images */
 .gallery img:hover {
   transform: scale(1.05);
   opacity: 1;
@@ -78,5 +84,6 @@ footer {
   color: #eee;
   padding: 1em;
 }
+
 
 
